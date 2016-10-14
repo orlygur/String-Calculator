@@ -28,4 +28,9 @@ public class CalculatorTest {
 	public void testFourNumbers() {
 		assertEquals(10, Calculator.Add("1,2,3,4"));
 	}
+	
+	@Test
+	public void testAcceptNewlineAsDelimiter() {
+		assertEquals(6, Calculator.Add("1,2\n3"));
+	}
 }
